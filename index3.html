@@ -8,30 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar bg-white box-shadow navbar-expand-lg fixed-top">
-        <div class="container">
-            <h1 id="titulo">Igreja AD Carajás</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collpase justify-content-end" id="navbar-main">
-                <ul class="nav navbar-nav ms-auto mb-2 mb-lg-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Agenda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container"> <!-- este conainer limita o preenchimento da tela, deixando centralizada-->
+                <h1 id="titulo">Igreja AD Carajás</h1>
+                <!--cria um menu hamburguer-->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu"> <!--justify-content-end na tela maior volta o menu a direita-->
+                    <ul class="nav navbar-nav nav-pills"> <!--nav-pills / nav-item / nav-link , separam os elementos  -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Missões</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </nav>
+    </header>
     <!--conteúdo main-->
     <main>
         <div class="container-fluid">
@@ -48,7 +54,7 @@
                     <div class="carousel-item active" data-title="História da Igreja" data-text="Desde a sua fundação até os dias de hoje." data-btn-link="historia.html">
                         <img src="img/imghistoria.png" class="d-block w-100" alt="Fachada da Igreja AD Carajás">
                     </div>
-                    <div class="carousel-item" data-title="Missões" data-text="Descubra como nossa igreja ajuda com missões." data-btn-link="missoes.html">
+                    <div class="carousel-item" data-title="Missões" data-text="Descubra como nossa Igreja ajuda com missões." data-btn-link="missoes.html">
                         <img src="img/imgmissões.png" class="d-block w-100" alt="Banner do Culto de Santa Ceia">
                     </div>
                     <div class="carousel-item" data-title="Eventos" data-text="Veja nossos próximos eventos e participe." data-btn-link="eventos.html">

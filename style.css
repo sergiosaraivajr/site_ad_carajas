@@ -29,6 +29,12 @@ a {
         font-size: 48px;
     }
 
+    .nav li a {
+        font-size: 24px;
+        color: #3d1016;
+        font-weight: 600;
+    }
+
 .cor-destaque {
     color: #a66a21;
     }
