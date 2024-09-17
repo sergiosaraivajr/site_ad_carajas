@@ -3,74 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Igreja</title>
+    <title>Igreja AD Carajás - Página Oficial</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header id="cabecalho">
-            <div class="navbar bg-white box-shadow navbar-expand-md fixed-top py-3">
-                <div class="container">
-                    <h1>Igreja AD Carajás</h1>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"></button>
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                        <ul class="nav navbar-nav nav-pills">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#inicio">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#produtos">Agenda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#promocoes">Eventos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contato">Contato</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container"> <!-- este conainer limita o preenchimento da tela, deixando centralizada-->
+                <h1 id="titulo">Igreja AD Carajás</h1>
+                <!--cria um menu hamburguer-->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu"> <!--justify-content-end na tela maior volta o menu a direita-->
+                    <ul class="nav navbar-nav nav-pills"> <!--nav-pills / nav-item / nav-link , separam os elementos  -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Missões</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </header>
-        <div id="carousel-principal" class="carousel carousel-fade slide" data-bs-ride="carousel"> <!-- data-bs-ride="carousel p/ div entender que se trata de carousel / class="carousel-fade" muda a transição das img-->
-            <div class="carousel-inner">
-                <div data-bs-interval="3000" class="carousel-item active"> <!-- active para iniciar o carousel-->
-                    <img class="d-block w-100" src="img/57052289_416506638927005_7930315919862005760_n.jpg">
-                    <div class="carousel-caption">
-                        <h2>Fachada</h2>
+        </div>
+    </header>
+    <!--conteúdo main-->
+    <main>
+        <div class="container-fluid">
+            <div class="row bg-cor align-items-center">
+                <div class="col-xl-5 text-white mt-md-5 p-5" id="carouselContent">
+                    <h1 id="carousel-title">Conheça a história da Igreja</h1>
+                    <p id="carousel-text">Desde a sua fundação até os dias de hoje.</p>
+                    <a class="btn btn-outline-light text-white" href="#" id="carousel-btn">Saiba Mais</a>
+                </div> 
+                <!-- Carrossel de imagens -->
+        <div class="col-xl-7 p-0">
+            <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-title="História da Igreja" data-text="Desde a sua fundação até os dias de hoje." data-btn-link="historia.html">
+                        <img src="img/imghistoria.png" class="d-block w-100" alt="Fachada da Igreja AD Carajás">
+                    </div>
+                    <div class="carousel-item" data-title="Missões" data-text="Descubra como nossa Igreja ajuda com missões." data-btn-link="missoes.html">
+                        <img src="img/imgmissões.png" class="d-block w-100" alt="Banner do Culto de Santa Ceia">
+                    </div>
+                    <div class="carousel-item" data-title="Eventos" data-text="Veja nossos próximos eventos e participe." data-btn-link="eventos.html">
+                        <img src="img/imgeventos.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
+                    </div>
+                    <div class="carousel-item" data-title="Agenda" data-text="Fique por dentro da nossa agenda semanal." data-btn-link="agenda.html"></div>
+                        <img src="img/imgagenda.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
                     </div>
                 </div>
-                <div data-bs-interval="3000" class="carousel-item"> <!--data-bs-interval="2000" intervalo em ms na troca das img -->
-                    <img class="d-block w-100" src="img/93770200_648167862427547_6237327540780793856_n.jpg">
-                    <div class="carousel-caption">
-                        <h2></h2>
-                    </div>
-                </div>
-                <div data-bs-interval="3000" class="carousel-item">
-                    <img class="d-block w-100" src="img/WhatsApp Image 2024-04-30 at 15.29.36.jpeg">
-                    <div class="carousel-caption">
-                        <h2>Interior</h2>
-                    </div>
-                </div>
-            </div>
-            <button data-bs-target="#carousel-principal" data-bs-slide="prev" class="carousel-control-prev" type="button"> <!-- add btn para retornar a img-->
-                <span class="carousel-control-prev-icon"></span> <!--data-bs-target= indica o elmto que vai ser afetado com a ação do btn / data-bs-slide="prev" volta ao anterior--> 
-            </button>
-            <button data-bs-target="#carousel-principal" data-bs-slide="next" class="carousel-control-next" type="button"> <!--para avançar-->
-                <span class="carousel-control-next-icon"></span>
-            </button>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel-principal" class="active" data-bs-slide-to="0"></button>
-                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="2"></button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </div>
-    <div class="container">
-        
-    </div>
+</div>
+    </main>
     <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
