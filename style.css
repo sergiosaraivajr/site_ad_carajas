@@ -21,7 +21,8 @@ a {
         border: 1px solid #a66a21;
     }*/
     
-    #titulo {
+    #titulo,
+    .text-center {
         color: #3d1016;
     }
 
@@ -34,6 +35,15 @@ a {
         color: #3d1016;
         font-weight: 600;
     }
+
+.navbar-toggler {
+        border-color: #3d1016; /* Cor da borda do botão */
+    }
+    
+.navbar-toggler-icon {
+        : #3d1016; /* Cor das três barras (ícone) */
+    }
+    
 
 .cor-destaque {
     color: #a66a21;
@@ -84,7 +94,7 @@ a {
     right: 10px; /* Define a posição do botão próximo */
 }
 
-    #home-quote {
+#home-quote {
     background: url("imagens/cavalo01.jpg") center top;
     background-size: cover;
     }
