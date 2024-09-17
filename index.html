@@ -7,32 +7,70 @@
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
 </head>
 <body>
-    <header id="cabecalho">
-        <div class="navbar bg-white box-shadow navbar-expand-md fixed-top py-3">
-            <div class="container">
-                <h1>Igreja AD Carajás</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"></button>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                    <ul class="nav navbar-nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#inicio">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#produtos">Agenda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#promocoes">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
+    <div class="container">
+        <header id="cabecalho">
+            <div class="navbar bg-white box-shadow navbar-expand-md fixed-top py-3">
+                <div class="container">
+                    <h1>Igreja AD Carajás</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"></button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inicio">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#produtos">Agenda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#promocoes">Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="carousel-principal" class="carousel carousel-fade slide" data-bs-ride="carousel"> <!-- data-bs-ride="carousel p/ div entender que se trata de carousel / class="carousel-fade" muda a transição das img-->
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active"> <!-- active para iniciar o carousel-->
+                    <img class="d-block w-100" src="img/57052289_416506638927005_7930315919862005760_n.jpg">
+                    <div class="carousel-caption">
+                        <h2>Fachada</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item"> <!--data-bs-interval="2000" intervalo em ms na troca das img -->
+                    <img class="d-block w-100" src="img/93770200_648167862427547_6237327540780793856_n.jpg">
+                    <div class="carousel-caption">
+                        <h2></h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="img/WhatsApp Image 2024-04-30 at 15.29.36.jpeg">
+                    <div class="carousel-caption">
+                        <h2>Interior</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-principal" data-bs-slide="prev" class="carousel-control-prev" type="button"> <!-- add btn para retornar a img-->
+                <span class="carousel-control-prev-icon"></span> <!--data-bs-target= indica o elmto que vai ser afetado com a ação do btn / data-bs-slide="prev" volta ao anterior--> 
+            </button>
+            <button data-bs-target="#carousel-principal" data-bs-slide="next" class="carousel-control-next" type="button"> <!--para avançar-->
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-principal" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-principal" data-bs-slide-to="2"></button>
             </div>
         </div>
-
-    </header>
+    </div>
+    <div class="container">
+        
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>

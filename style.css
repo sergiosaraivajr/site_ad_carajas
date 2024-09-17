@@ -1,0 +1,123 @@
+a {
+    color: inherit;
+}
+
+.btn-primary {
+    background-color: #3d1016;
+        border: none;
+    }
+    
+    .btn-primary:hover {
+        color: #3d1016;
+        background-color: #3d1016;
+    }
+    
+    /*.btn-outline-primary {
+        border-color: #a66a21;
+    }
+    
+    .btn-outline-primary:hover {
+        background-color: #a66a21;
+        border: 1px solid #a66a21;
+    }*/
+    
+    #titulo {
+        color: #3d1016;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+.cor-destaque {
+    color: #a66a21;
+    }
+
+.ouro {
+    color: #f2ca52;
+    }
+
+.ouro-bg {
+    background-color: #f2ca52;
+    color: #222601;
+    }
+
+.container-fluid .bg-cor,
+    .card .bg-cor,
+    footer .bg-cor {
+    background-color: #3d1016;
+    }
+
+.row {
+    align-items: center;
+}
+
+.carouselMain {
+    position:initial; /* Posicionamento relativo para o contêiner do carrossel */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente os botões */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente opcional */
+    border-radius: 50%; /* Deixa os botões arredondados */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Define a posição do botão anterior */
+}
+
+.carousel-control-next {
+    right: 10px; /* Define a posição do botão próximo */
+}
+
+    #home-quote {
+    background: url("imagens/cavalo01.jpg") center top;
+    background-size: cover;
+    }
+
+.btn-block {
+    width: 100%;
+    display: block;
+    }
+
+.lista-plano li {
+    padding: 1rem;
+    }
+
+.lista-plano li + li {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .plano-ouro li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    ul {
+    list-style: none;
+    }
+
+.box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    }
+
+.card {
+    border: none;
+    }
+
+@media (max-width: 767px) {
+    .fixed-top {
+        position: relative;
+        }
+    }
+
+.bg-footer {
+    background-color: #d9c382;
+    }
