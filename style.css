@@ -23,40 +23,44 @@ body {
     color: #3d1016;
 }
 
+#cont {
+    background-color: #3d1016;
+    height: auto;
+    margin-top: 28px;
+}
+
 .btn-primary {
     background-color: #3d1016;
-        border: none;
+    border-color: #3d1016;
     }
     
-    .btn-primary:hover {
-        color: #3d1016;
-        background-color: #3d1016;
+.btn-primary:hover {
+    color: #3d1016;
+    background-color: #fff;
+    border-color: #3d1016;
     }
     
-    /*.btn-outline-primary {
-        border-color: #a66a21;
-    }
-    
-    .btn-outline-primary:hover {
-        background-color: #a66a21;
-        border: 1px solid #a66a21;
-    }*/
-    
-    #contato,
-    #titulo,
-    .text-center {
-        color: #3d1016;
+#contato,
+#titulo,
+.text-center {
+    color: #3d1016;
     }
 
-    h1 {
-        font-size: 48px;
+h1 {
+    font-size: 56px;
+}
+
+.nav li a {
+    font-size: 24px;
+    color: #3d1016;
+    font-weight: 600;
     }
 
-    .nav li a {
-        font-size: 24px;
-        color: #3d1016;
-        font-weight: 600;
-    }
+    /* Cor de fundo dos itens ativos */
+.nav-pills .nav-link.active {
+    background-color: #3d1016; /* Cor de fundo do link ativo */
+    color: #fff; /* Cor do texto do link ativo */
+}
 
 .container-fluid {
     background-color: #3d1016;
@@ -96,6 +100,11 @@ body {
 .navbar {
     box-shadow: 0px 0px 16px 0 rgba(115, 3, 3, 0.382);
     }
+
+#ebdConteudo,
+#cultosConteudo {
+    box-shadow: 6px 6px 16px 0 rgba(115, 3, 3, 0.382);
+}
 
 .card {
     border: none;
