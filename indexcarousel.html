@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja AD Carajás - Página Oficial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,6 +32,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#agenda">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#localizacao">Localização</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contato">Contato</a>
@@ -76,6 +80,11 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,11 +235,20 @@
                     </section>
                     </div>
             </section>
-                
+            
+            <!--Seção Localização-->
+            <section id="localizacao" class="py-5">
+                <div class="container">
+                    <h2 class="text-center">Localização</h2>
+                    <h5 class="text-center"><i class="fas fa-map-marker-alt"></i> Rua Araguaia 144 - Núcleo Urbano de Carajás - Parauapebas-PA</h5>
+                    <h6 class="text-center">CEP 68516-000</h6>
+                </div>
+            </section>
+
             <!-- Seção Contato -->
             <section id="contato" class="py-5">
                 <div class="container">
-                    <h2 class="text-center">Contato</h2>
+                    <h2 class="text-center bi bi-geo-alt-fill">Contato</h2>
                     <p class="lead text-center">Entre em contato conosco para mais informações.</p>
                     <form id="contato">
                         <div class="mb-3">
