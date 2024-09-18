@@ -2,6 +2,27 @@ a {
     color: inherit;
 }
 
+  /* Garante que o conteúdo abaixo do cabeçalho não fique oculto */
+body {
+    padding-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
+}
+
+/* Estilo opcional para o cabeçalho */
+#cabecalho {
+    background-color: #fff; /* Cor de fundo para o cabeçalho */
+    color: #3d1016; /* Cor do texto */
+    width: 100%;
+    z-index: 1030; /* Para garantir que o cabeçalho esteja acima do conteúdo */
+}
+
+#titulo {
+    margin: 0;
+}
+
+.navbar-nav .nav-link {
+    color: #3d1016;
+}
+
 .btn-primary {
     background-color: #3d1016;
         border: none;
@@ -21,6 +42,7 @@ a {
         border: 1px solid #a66a21;
     }*/
     
+    #contato,
     #titulo,
     .text-center {
         color: #3d1016;
@@ -36,31 +58,7 @@ a {
         font-weight: 600;
     }
 
-.navbar-toggler {
-        border-color: #3d1016; /* Cor da borda do botão */
-    }
-    
-.navbar-toggler-icon {
-        : #3d1016; /* Cor das três barras (ícone) */
-    }
-    
-
-.cor-destaque {
-    color: #a66a21;
-    }
-
-.ouro {
-    color: #f2ca52;
-    }
-
-.ouro-bg {
-    background-color: #f2ca52;
-    color: #222601;
-    }
-
-.container-fluid .bg-cor,
-    .card .bg-cor,
-    footer .bg-cor {
+.container-fluid {
     background-color: #3d1016;
     }
 
@@ -94,39 +92,19 @@ a {
     right: 10px; /* Define a posição do botão próximo */
 }
 
-#home-quote {
-    background: url("imagens/cavalo01.jpg") center top;
-    background-size: cover;
-    }
-
-.btn-block {
-    width: 100%;
-    display: block;
-    }
-
-.lista-plano li {
-    padding: 1rem;
-    }
-
-.lista-plano li + li {
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .plano-ouro li + li {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    ul {
-    list-style: none;
-    }
-
-.box-shadow {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+.card,
+.navbar {
+    box-shadow: 0px 0px 16px 0 rgba(115, 3, 3, 0.382);
     }
 
 .card {
     border: none;
     }
+
+.titulo-culto {
+    margin-top: 8px;
+}
+
 
 @media (max-width: 767px) {
     .fixed-top {

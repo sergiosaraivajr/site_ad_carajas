@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="cabecalho">
+    <header id="cabecalho" class="fixed-top">
         <div class="navbar navbar-expand-lg">
             <div class="container p-0"> <!-- este conainer limita o preenchimento da tela, deixando centralizada-->
-                <h1 id="titulo">Igreja AD Carajás</h1>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpg" width="100px" alt="Brand">
+                </a>
                 <!--cria um menu hamburguer-->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="collapse navbar-collapse justify-content-end" id="menu"> <!--justify-content-end na tela maior volta o menu a direita-->
-                    <ul class="nav navbar-nav "> <!--nav-pills / nav-item / nav-link , separam os elementos  -->
+                    <ul class="nav navbar-nav nav-pills"> <!--nav-pills / nav-item / nav-link , separam os elementos  -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link active" href="#">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Missões</a>
@@ -76,81 +78,82 @@
         </div>
     </div>
 </div>
-<!-- Seção Responsiva -->
-<section id="responsivo" class="py-5">
-    <div class="container">
-        <h2 class="text-center">Confira nossa programação</h2>
-        <div class="row">
-            <!-- Card 1 -->
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/culto evan.jpg" class="card-img-top" alt="Imagem 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Culto Evangelístico</h5>
-                        <p class="card-text">Ocorre às terças-feiras às 19:30h</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
+    <!-- Seção Responsiva -->
+    <div>
+        <section id="Missões" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Confira nossa programação</h2>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="img/culto evan.jpg" class="card-img-top" alt="Imagem 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Culto Evangelístico</h5>
+                                <p class="card-text">Ocorre às terças-feiras às 19:30h</p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="img/imgagenda.png" class="card-img-top" alt="Imagem 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Agenda Semanal</h5>
+                                <p class="card-text">Aqui você fica por dentro dos horários dos nossos cultos e atividades</p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="img/imghistoria.png" class="card-img-top" alt="Imagem 3">
+                            <div class="card-body">
+                                <h5 class="card-title">História da AD Carajás</h5>
+                                <p class="card-text">Saiba onde tudo começou, os pioneiros e os pastores que já presidiram esta Igreja</p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="img/imgmissões.png" class="card-img-top" alt="Imagem 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Missões</h5>
+                                <p class="card-text">Saiba como nossa Igreja vem atuando com missões na comunidade e contribuições.</p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="img/maxresdefault.jpg" class="card-img-top" alt="Imagem 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Culto de Santa Ceia</h5>
+                                <p class="card-text">Ocorre todo primeiro domingo de cada mês.</p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="img/imgeventos.png" class="card-img-top" alt="Imagem 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Agenda de Eventos</h5>
+                                <p class="card-text">Confira nossa agenda de próximos eventos.</p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Card 2 -->
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/imgagenda.png" class="card-img-top" alt="Imagem 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Agenda Semanal</h5>
-                        <p class="card-text">Aqui você fica por dentro dos horários dos nossos cultos e atividades</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/imghistoria.png" class="card-img-top" alt="Imagem 3">
-                    <div class="card-body">
-                        <h5 class="card-title">História da AD Carajás</h5>
-                        <p class="card-text">Saiba onde tudo começou, os pioneiros e os pastores que já presidiram esta Igreja</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/imgmissões.png" class="card-img-top" alt="Imagem 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Missões</h5>
-                        <p class="card-text">Saiba como nossa Igreja vem atuando com missões na comunidade e contribuições.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/maxresdefault.jpg" class="card-img-top" alt="Imagem 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Culto de Santa Ceia</h5>
-                        <p class="card-text">Ocorre todo primeiro domingo de cada mês.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 6 -->
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/imgeventos.png" class="card-img-top" alt="Imagem 6">
-                    <div class="card-body">
-                        <h5 class="card-title">Agenda de Eventos</h5>
-                        <p class="card-text">Confira nossa agenda de próximos eventos.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
-</section>
-    </main>
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>

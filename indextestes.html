@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igreja AD Carajás - Página Oficial</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho" class="fixed-top">
+        <div class="navbar navbar-expand-lg">
+            <div class="container p-0"> <!-- este conainer limita o preenchimento da tela, deixando centralizada-->
+                <a href="#cabecalho">
+                    <img class="navbar-brand" src="img/logo.jpg" width="100px" alt="Brand">
+                </a>
+                <!--cria um menu hamburguer-->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu"> <!--justify-content-end na tela maior volta o menu a direita-->
+                    <ul class="nav navbar-nav nav-pills"> <!--nav-pills / nav-item / nav-link ,marca a section separam os elementos  -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#missoes">Missões</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#eventos">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#agenda">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--conteúdo main-->
+    <main>
+        <div class="container-fluid">
+            <div class="row bg-cor align-items-center">
+                <div class="col-xl-5 text-white mt-md-5 p-5" id="carouselContent">
+                    <h1 id="carousel-title">Conheça a história da Igreja</h1>
+                    <p id="carousel-text">Desde a sua fundação até os dias de hoje.</p>
+                    <a class="btn btn-outline-light text-white" href="#" id="carousel-btn">Saiba Mais</a>
+                </div> 
+                <!-- Carrossel de imagens -->
+                <div class="col-xl-7 p-0">
+                    <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-title="História da Igreja" data-text="Desde a sua fundação até os dias de hoje." data-btn-link="historia.html">
+                                <img src="img/imghistoria.png" class="d-block w-100" alt="Fachada da Igreja AD Carajás">
+                            </div>
+                            <div class="carousel-item" data-title="Missões" data-text="Descubra como nossa Igreja ajuda com missões." data-btn-link="missoes.html">
+                                <img src="img/imgmissões.png" class="d-block w-100" alt="Banner do Culto de Santa Ceia">
+                            </div>
+                            <div class="carousel-item" data-title="Eventos" data-text="Veja nossos próximos eventos e participe." data-btn-link="eventos.html">
+                                <img src="img/imgeventos.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
+                            </div>
+                            <div class="carousel-item" data-title="Agenda" data-text="Fique por dentro da nossa agenda semanal." data-btn-link="agenda.html">
+                                <img src="img/imgagenda.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            
+            <!-- Seção Sobre -->
+            <section id="sobre" class="py-5">
+                <div class="container">
+                    <h2 class="text-center">Sobre</h2>
+                    <p class="lead text-center">Conheça a história da nossa igreja, nossas crenças e nossa missão.</p>
+                    <p>A Igreja AD Carajás foi fundada em... (conteúdo adicional).</p>
+                </div>
+            </section>
+
+            <!-- Seção Missões -->
+            <section id="missoes" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center">Missões</h2>
+                    <p class="lead text-center">Nosso compromisso em levar a palavra de Deus para todo o mundo.</p>
+                    <p>Nossa igreja está envolvida em várias missões nacionais e internacionais... (conteúdo adicional).</p>
+                </div>
+            </section>
+
+            <!-- Seção Eventos -->
+            <section id="eventos" class="py-5">
+                <div class="container">
+                    <h2 class="text-center">Eventos</h2>
+                    <p class="lead text-center">Acompanhe os eventos que estão acontecendo em nossa igreja.</p>
+                    
+                    <!-- Início da linha (row) -->
+                    <div class="row">
+                        <!-- Primeiro card -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-60">
+                                <img src="img/Congresso Unificado.jpg" class="card-img-top" alt="Banner do evento congresso de jovens e adolescentes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Congresso Unificado de Jovens e Adolescentes</h5>
+                                    <p class="card-text">Ocorre nos dias 21 e 22 de setembro/2024.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Segundo card -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-60">
+                                <img src="img/EMBREVE.png" class="card-img-top" alt="Imagem 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">EM BREVE. ESPAÇO PARA NOVOS EVENTOS</h5>
+                                    <p class="card-text">Espaço para novos eventos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Terceiro card -->
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/EMBREVE.png" class="card-img-top" alt="Imagem do evento">
+                                <div class="card-body">
+                                    <h5 class="card-title">EM BREVE. ESPAÇO PARA NOVOS EVENTOS</h5>
+                                    <p class="card-text">Espaço para novos eventos.</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- Fim da linha (row) -->
+                </div>
+            </section>
+
+            <!-- Seção Agenda -->
+            <section id="agenda" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center">Agenda</h2>
+                    <p class="lead text-center">Veja nossa programação semanal e não perca nada!</p>
+                    <!-- Subseção Cultos -->
+                    <section id="cultos" class="mb-5">
+                        <h3 class="text-center">Cultos</h3>
+                        <div class="row text-center mt-md-4">
+                            <div class="col-md-4 mb-4">
+                                <img src="img/cultodejovenseadolescentes.png" alt="Culto de Domingo" class="img-fluid">
+                                <h4 class="titulo-culto">Culto de Domingo às 19:00h</h4>
+                                <p>Venha participar de um momento especial de Adoração.</p>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="img/culto de ensino.jpg" alt="Culto de Terça-feira" class="img-fluid">
+                                <h4 class="titulo-culto">Culto de Terça-feira às 19:30h</h4>
+                                <p>Estudo da palavra e comunhão com os irmãos.</p>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="img/culto evan.jpg" alt="Culto de Quinta-feira" class="img-fluid">
+                                <h4 class="titulo-culto">Culto de Sexta-feira às 19:30h</h4>
+                                <p>Encontro de oração e intercessão.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Subseção Orações -->
+                    <section id="oracoes" class="mb-5">
+                        <h3 class="text-center">Orações - Círculo de Oração</h3>
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <img src="img/" alt="Oração pela manhã" class="img-fluid">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <p>Oração pela manhã - Participe de um momento de intercessão e gratidão a Deus.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <img src="img/" alt="Oração pela manhã" class="img-fluid">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <p>Oração pela manhã - Um tempo de oração e busca pela presença de Deus.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <img src="img/" alt="Oração pela manhã" class="img-fluid">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <p>Oração pela manhã - Clamando a Deus pela proteção e união dos lares.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <img src="img/" alt="Oração pela manhã" class="img-fluid">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <p>Oração pela manhã - Rogando a Deus por sabedoria e fortalecimento espiritual.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/" alt="Oração pela manhã" class="img-fluid">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <p>Oração pela manhã - Orando por nossos missionários e pelo avanço do Evangelho.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Subseção EBD -->
+                    <section id="ebd">
+                        <h3 class="text-center">Escola Bíblica Dominical (EBD)</h3>
+                        <div class="row mt-md-4">
+                            <div class="col-md-4">
+                                <img src="img/escolabiblica.png" alt="Escola Bíblica Dominical" class="img-fluid">
+                            </div>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <p>Escola Bíblica Dominical - Todos os domingos às 08:30h, venha aprender mais da Palavra de Deus e crescer espiritualmente.</p>
+                            </div>
+                        </div>
+                    </section>
+                    </div>
+                </section>
+                
+                <!-- Seção Contato -->
+                <section id="contato" class="py-5">
+                    <div class="container">
+                        <h2 class="text-center">Contato</h2>
+                        <p class="lead text-center">Entre em contato conosco para mais informações.</p>
+                        <form id="contato">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Seu email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">Celular</label>
+                                <input type="tel" class="form-control" id="tel" placeholder="Seu celular">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </section>
+        </div>
+    </main>
+</body>
+
+<script src="./lib/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</html>
