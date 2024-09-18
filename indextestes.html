@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja AD Carajás - Página Oficial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +13,7 @@
         <div class="navbar navbar-expand-lg">
             <div class="container p-0"> <!-- este conainer limita o preenchimento da tela, deixando centralizada-->
                 <a href="#cabecalho">
-                    <img class="navbar-brand" src="img/logo.jpg" width="100px" alt="Brand">
+                    <img class="navbar-brand" src="img/logo.jpg" width="80px" alt="Brand">
                 </a>
                 <!--cria um menu hamburguer-->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -33,6 +34,9 @@
                             <a class="nav-link" href="#agenda">Agenda</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#localizacao">Localização</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
@@ -42,38 +46,31 @@
     </header>
     <!--conteúdo main-->
     <main>
-        <div class="container-fluid">
-            <div class="row bg-cor align-items-center">
-                <div class="col-xl-5 text-white mt-md-5 p-5" id="carouselContent">
-                    <h1 id="carousel-title">História da Igreja</h1>
-                    <p id="carousel-text">Desde a sua fundação até os dias de hoje.</p>
-                    <a class="btn btn-outline-light text-white" href="#" id="carousel-btn">Saiba Mais</a>
-                </div> 
-                <!-- Carrossel de imagens -->
-                <div class="col-xl-7 p-0">
-                    <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <a href="#sobre">
-                                <div class="carousel-item active" data-title="História da Igreja" data-text="Desde a sua fundação até os dias de hoje." data-btn-link="historia.html">
-                                    <img src="img/imghistoria.png" class="d-block w-100" alt="Fachada da Igreja AD Carajás">
-                                </div>
-                            </a>
-                            <a href="#missoes">
-                                <div class="carousel-item" data-title="Missões" data-text="Descubra como nossa Igreja ajuda com missões." data-btn-link="missoes.html">
-                                    <img src="img/imgmissões.png" class="d-block w-100" alt="Banner do Culto de Santa Ceia">
-                                </div>
-                            </a>
-                            <a href="#eventos">
-                                <div class="carousel-item" data-title="Eventos" data-text="Veja nossos próximos eventos e participe." data-btn-link="eventos.html">
-                                    <img src="img/imgeventos.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
-                                </div>
-                            </a>
-                            <a href="#agenda">
-                                <div class="carousel-item" data-title="Agenda" data-text="Fique por dentro da nossa agenda semanal." data-btn-link="agenda.html">
-                                    <img src="img/imgagenda.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
-                                </div>
-                            </a>
-                        </div>
+        <div id="cont">
+            <!-- Carrossel de imagens -->
+            <div class="container">
+                <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <a href="#sobre">
+                            <div class="carousel-item active" data-title="História da Igreja" data-text="Desde a sua fundação até os dias de hoje." data-btn-link="historia.html">
+                                <img src="img/imghistoria.png" class="d-block w-100" alt="Fachada da Igreja AD Carajás">
+                            </div>
+                        </a>
+                        <a href="#missoes">
+                            <div class="carousel-item" data-title="Missões" data-text="Descubra como nossa Igreja ajuda com missões." data-btn-link="missoes.html">
+                                <img src="img/imgmissões.png" class="d-block w-100" alt="Banner do Culto de Santa Ceia">
+                            </div>
+                        </a>
+                        <a href="#eventos">
+                            <div class="carousel-item" data-title="Eventos" data-text="Veja nossos próximos eventos e participe." data-btn-link="eventos.html">
+                                <img src="img/imgeventos.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
+                            </div>
+                        </a>
+                        <a href="#agenda">
+                            <div class="carousel-item" data-title="Agenda" data-text="Fique por dentro da nossa agenda semanal." data-btn-link="agenda.html">
+                                <img src="img/imgagenda.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
+                            </div>
+                        </a>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,11 +80,15 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
                 </div>
             </div>
         </div>
         <div data-bs-spy="scroll" data-bs-target="#cabecalho">
-            
             <!-- Seção Sobre -->
             <section id="sobre" class="py-5">
                 <div class="container">
@@ -157,7 +158,7 @@
                     <!-- Subseção Cultos -->
                     <section id="cultos" class="mb-5">
                         <h3 class="text-center">Cultos</h3>
-                        <div class="row text-center mt-md-4">
+                        <div id="cultosConteudo" class="row text-center mt-md-4">
                             <div class="col-md-4 mb-4">
                                 <img src="img/cultodejovenseadolescentes.png" alt="Culto de Domingo" class="img-fluid">
                                 <h4 class="titulo-culto">Culto de Domingo às 19:00h</h4>
@@ -223,7 +224,7 @@
                     <!-- Subseção EBD -->
                     <section id="ebd">
                         <h3 class="text-center">Escola Bíblica Dominical (EBD)</h3>
-                        <div class="row mt-md-4">
+                        <div id="ebdConteudo" class="row mt-md-4">
                             <div class="col-md-4">
                                 <img src="img/escolabiblica.png" alt="Escola Bíblica Dominical" class="img-fluid">
                             </div>
@@ -233,38 +234,46 @@
                         </div>
                     </section>
                     </div>
-                </section>
-                
-                <!-- Seção Contato -->
-                <section id="contato" class="py-5">
-                    <div class="container">
-                        <h2 class="text-center">Contato</h2>
-                        <p class="lead text-center">Entre em contato conosco para mais informações.</p>
-                        <form id="contato">
-                            <div class="mb-3">
-                                <label for="nome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Seu email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="tel" class="form-label">Celular</label>
-                                <input type="tel" class="form-control" id="tel" placeholder="Seu celular">
-                            </div>
-                            <div class="mb-3">
-                                <label for="mensagem" class="form-label">Mensagem</label>
-                                <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
-                    </div>
-                </section>
+            </section>
+            
+            <!--Seção Localização-->
+            <section id="localizacao" class="py-5">
+                <div class="container">
+                    <h2 class="text-center">Localização</h2>
+                    <h5 class="text-center"><i class="fas fa-map-marker-alt"></i> Rua Araguaia 144 - Núcleo Urbano de Carajás - Parauapebas-PA</h5>
+                    <h6 class="text-center">CEP 68516-000</h6>
+                </div>
+            </section>
+
+            <!-- Seção Contato -->
+            <section id="contato" class="py-5">
+                <div class="container">
+                    <h2 class="text-center bi bi-geo-alt-fill">Contato</h2>
+                    <p class="lead text-center">Entre em contato conosco para mais informações.</p>
+                    <form id="contato">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Celular</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="Seu celular">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </section>
         </div>
     </main>
 </body>
 
 <script src="./lib/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
 </html>
