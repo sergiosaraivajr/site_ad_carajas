@@ -40,7 +40,7 @@ body {
     border-color: #3d1016;
     }
     
-#contato,
+#fale-conosco,
 #titulo,
 .text-center {
     color: #3d1016;
@@ -51,7 +51,7 @@ h1 {
 }
 
 .nav li a {
-    font-size: 18px;
+    font-size: 16px;
     color: #3d1016;
     font-weight: 600;
     }
@@ -65,10 +65,6 @@ h1 {
 .container-fluid {
     background-color: #3d1016;
     }
-
-.row {
-    align-items: center;
-}
 
 .carouselMain {
     position:initial; /* Posicionamento relativo para o contêiner do carrossel */
@@ -102,16 +98,76 @@ h1 {
     }
 
 #ebdConteudo,
-#cultosConteudo {
-    box-shadow: 6px 6px 16px 0 rgba(115, 3, 3, 0.382);
+#cultosConteudo,
+#sobreMain {
+    box-shadow: 6px 6px 16px 4px rgba(115, 3, 3, 0.382);
 }
 
-.card {
+.card,
+.nav-link,
+.navbar-brand,
+#ebdConteudo {
     border: none;
+    transition: transform 0.6s ease; /* Transição suave */
+    }
+
+.card:hover,
+.nav-link:hover,
+.navbar-brand:hover,
+#ebdConteudo:hover {
+        transform: scale(1.1); /* Expande o cartão em 10% */
     }
 
 .titulo-culto {
     margin-top: 8px;
+}
+
+/*seção fale consoco*/
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    padding-left: 30px; /* Adiciona espaço para o ícone */
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 10px; /* Coloca o ícone dentro do input */
+    top: 50%;
+    transform: translateY(10%);
+}
+
+#fale-conosco button,
+.rodape {
+    background-color: #3d1016;
+    color: #fff;
+    border-color: #3d1016;
+}
+
+#fale-conosco button:hover {
+    background-color: #ffeae6;
+    color: #3d1016;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #3d1016;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 767) {
+    .carousel-item img {
+        height: 280px;
+    }
 }
 
 
@@ -119,8 +175,4 @@ h1 {
     .fixed-top {
         position: relative;
         }
-    }
-
-.bg-footer {
-    background-color: #d9c382;
     }
