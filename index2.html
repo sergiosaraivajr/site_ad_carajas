@@ -4,76 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja AD Carajás - Página Oficial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="cabecalho" class="fixed-top">
-        <div class="navbar navbar-expand-lg">
-            <div class="container p-0"> <!-- este conainer limita o preenchimento da tela, deixando centralizada-->
-                <a href="#cabecalho">
-                    <img class="navbar-brand" src="img/logo.jpg" width="100px" alt="Brand">
-                </a>
-                <!--cria um menu hamburguer-->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="collapse navbar-collapse justify-content-end" id="menu"> <!--justify-content-end na tela maior volta o menu a direita-->
-                    <ul class="nav navbar-nav nav-pills"> <!--nav-pills / nav-item / nav-link ,marca a section separam os elementos  -->
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#missoes">Missões</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#eventos">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#agenda">Agenda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <header id="cabecalho" class="navbar navbar-expand-lg fixed-top">
+        <div class="container p-0"> <!-- este conainer limita o preenchimento da tela, deixando centralizada-->
+            <a href="#cabecalho">
+                <img class="navbar-brand" src="img/logo.jpg" width="80px" alt="Brand">
+            </a>
+            <!--cria um menu hamburguer-->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu"> <!--justify-content-end na tela maior volta o menu a direita-->
+                <ul class="nav navbar-nav nav-pills"> <!--nav-pills / nav-item / nav-link ,marca a section separam os elementos  -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#missoes">Missões</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#eventos">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agenda">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fale-conosco">Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
     </header>
     <!--conteúdo main-->
     <main>
-        <div class="container-fluid">
-            <div class="row bg-cor align-items-center">
-                <div class="col-xl-5 text-white mt-md-5 p-5" id="carouselContent">
-                    <h1 id="carousel-title">Conheça a história da Igreja</h1>
-                    <p id="carousel-text">Desde a sua fundação até os dias de hoje.</p>
-                    <a class="btn btn-outline-light text-white" href="#" id="carousel-btn">Saiba Mais</a>
-                </div> 
-                <!-- Carrossel de imagens -->
-                <div class="col-xl-7 p-0">
-                    <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <a href="#sobre">
-                                <div class="carousel-item active" data-title="História da Igreja" data-text="Desde a sua fundação até os dias de hoje." data-btn-link="historia.html">
-                                    <img src="img/imghistoria.png" class="d-block w-100" alt="Fachada da Igreja AD Carajás">
-                                </div>
-                            </a>
-                            <a href="#missoes">
-                                <div class="carousel-item" data-title="Missões" data-text="Descubra como nossa Igreja ajuda com missões." data-btn-link="missoes.html">
-                                    <img src="img/imgmissões.png" class="d-block w-100" alt="Banner do Culto de Santa Ceia">
-                                </div>
-                            </a>
-                            <a href="#eventos">
-                                <div class="carousel-item" data-title="Eventos" data-text="Veja nossos próximos eventos e participe." data-btn-link="eventos.html">
-                                    <img src="img/imgeventos.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
-                                </div>
-                            </a>
-                            <a href="#agenda">
-                                <div class="carousel-item" data-title="Agenda" data-text="Fique por dentro da nossa agenda semanal." data-btn-link="agenda.html">
-                                    <img src="img/imgagenda.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
-                                </div>
-                            </a>
-                        </div>
+        <div id="cont">
+            <!-- Carrossel de imagens -->
+            <div class="container">
+                <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <a href="#sobre">
+                            <div class="carousel-item active" data-title="História da Igreja" data-text="Desde a sua fundação até os dias de hoje." data-btn-link="historia.html">
+                                <img src="img/imghistoria.png" class="d-block w-100" alt="Fachada da Igreja AD Carajás">
+                            </div>
+                        </a>
+                        <a href="#missoes">
+                            <div class="carousel-item" data-title="Missões" data-text="Descubra como nossa Igreja ajuda com missões." data-btn-link="missoes.html">
+                                <img src="img/imgmissões.png" class="d-block w-100" alt="Banner do Culto de Santa Ceia">
+                            </div>
+                        </a>
+                        <a href="#eventos">
+                            <div class="carousel-item" data-title="Eventos" data-text="Veja nossos próximos eventos e participe." data-btn-link="eventos.html">
+                                <img src="img/imgeventos.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
+                            </div>
+                        </a>
+                        <a href="#agenda">
+                            <div class="carousel-item" data-title="Agenda" data-text="Fique por dentro da nossa agenda semanal." data-btn-link="agenda.html">
+                                <img src="img/imgagenda.png" class="d-block w-100" alt="Banner do Culto Evangelístico">
+                            </div>
+                        </a>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,17 +76,92 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                    </div>
                 </div>
             </div>
         </div>
         <div data-bs-spy="scroll" data-bs-target="#cabecalho">
-            
             <!-- Seção Sobre -->
             <section id="sobre" class="py-5">
-                <div class="container">
+                <div id="sobreMain" class="container">
                     <h2 class="text-center">Sobre</h2>
-                    <p class="lead text-center">Conheça a história da nossa igreja, nossas crenças e nossa missão.</p>
-                    <p>A Igreja AD Carajás foi fundada em... (conteúdo adicional).</p>
+                    <p class="lead text-center">Conheça a história da nossa igreja, desde o primeiro templo ao atual. E mais...</p>
+                    <div id="carouselSobre" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Primeiro slide -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="img/caverna1.jpg" alt="Imagem de uma caverna" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-8 align-items-center">
+                                        <p class="justify-content-top">A história da AD Carajás começou em 1982, com o primeiro culto sendo realizado em uma caverna. Os Irmãos em Cristo, João Rosa, Aluízio e Antônio dos Santos, ergueram um altar improvisado naquele lugar. Foram aconselhados pelo Pr. Jhonata, de Marabá, a buscarem um Pastor para a região.</p>
+                                        <p>E em 1985 os cultos passaram a ser realizados em um quiosque na vila de N5.</p>
+                                        <p>*Imagem ilustrativa.</p>
+                                    </div>
+                                    <div class="container mt-5">
+                                    <h3 class="text-center mb-4">Templo na Vila de N5</h3>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="img/n5/tempon5.jpg" class="img-fluid" alt="Imagem do templo na vila de N5">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="img/n5/irmãsn5.jpg" class="img-fluid" alt="Imagem das irmãs da igreja sentadas">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="img/n5/culton5.jpg" class="img-fluid" alt="Imagem de irmãos da igreja em evento">
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- Segundo slide -->
+                            <div class="carousel-item">
+                                <div class="container mt-5">
+                                    <h3 class="text-center mb-4">Templo na Vila de N5</h3>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="img/n5/tempon5.jpg" class="img-fluid" alt="Imagem do templo na vila de N5">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="img/n5/irmãsn5.jpg" class="img-fluid" alt="Imagem das irmãs da igreja sentadas">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="img/n5/culton5.jpg" class="img-fluid" alt="Imagem de irmãos da igreja em evento">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Terceiro slide -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="img/something.jpg" alt="Imagem exemplo" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-8 align-items-center">
+                                        <p class="justify-content-top">Outro conteúdo relevante da história da igreja.</p>
+                                        <p>Mais informações sobre o crescimento da congregação.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controles do Carousel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSobre" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSobre" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
                 </div>
             </section>
 
@@ -157,7 +225,7 @@
                     <!-- Subseção Cultos -->
                     <section id="cultos" class="mb-5">
                         <h3 class="text-center">Cultos</h3>
-                        <div class="row text-center mt-md-4">
+                        <div id="cultosConteudo" class="row text-center mt-md-4">
                             <div class="col-md-4 mb-4">
                                 <img src="img/cultodejovenseadolescentes.png" alt="Culto de Domingo" class="img-fluid">
                                 <h4 class="titulo-culto">Culto de Domingo às 19:00h</h4>
@@ -223,7 +291,7 @@
                     <!-- Subseção EBD -->
                     <section id="ebd">
                         <h3 class="text-center">Escola Bíblica Dominical (EBD)</h3>
-                        <div class="row mt-md-4">
+                        <div id="ebdConteudo" class="row mt-md-4">
                             <div class="col-md-4">
                                 <img src="img/escolabiblica.png" alt="Escola Bíblica Dominical" class="img-fluid">
                             </div>
@@ -233,38 +301,103 @@
                         </div>
                     </section>
                     </div>
-                </section>
-                
-                <!-- Seção Contato -->
-                <section id="contato" class="py-5">
-                    <div class="container">
-                        <h2 class="text-center">Contato</h2>
-                        <p class="lead text-center">Entre em contato conosco para mais informações.</p>
-                        <form id="contato">
-                            <div class="mb-3">
-                                <label for="nome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Seu email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="tel" class="form-label">Celular</label>
-                                <input type="tel" class="form-control" id="tel" placeholder="Seu celular">
-                            </div>
-                            <div class="mb-3">
-                                <label for="mensagem" class="form-label">Mensagem</label>
-                                <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
+            </section>
+            
+            <!-- Seção Fale conosco -->
+            <section id="fale-conosco" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center">Fale conosco</h2>
                     </div>
-                </section>
+                    <div class="row">
+                        <div class="col-md-7 mb-5">
+                            <form>
+                                <div class="mb-3 input-with-icon">
+                                    <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                    <input type="text" id="nome" class="form-control" required>
+                                        <i class="bi bi-person text-colored"></i>
+                                </div>
+                                <div class="mb-3 input-with-icon">
+                                    <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                    <input type="email" id="nome" class="form-control" placeholder="email@exemplo.com" required>
+                                        <i class="bi bi-at text-colored"></i>
+                                </div>
+                                <div class="mb-3 input-with-icon">
+                                    <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                    <input type="tel" id="telefone" class="form-control">
+                                        <i class="bi bi-telephone text-colored"></i>
+                                </div>
+                                <div class="mb-3 input-with-icon">
+                                    <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                    <textarea id="mensagem" class="form-control" required></textarea>
+                                </div>
+                                <button type="button" class="btn fw-bold">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociais</h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="">
+                                            <i class="bi bi-facebook text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-1 me-1"> <!--ms-1 e me-1 aplica margem no icon do insta/mantém alinhado-->
+                                        <a href="">
+                                            <i class="bi bi-instagram text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="">
+                                            <i class="bi bi-whatsapp text-colored"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-telephone-forward-fill"></i>
+                                    Telefone</h3>
+                                <p>
+                                    (94) 99999-9999
+                                </p>
+                            </div>
+                            <div class="row mt-4"></div>
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    Endereço</h3>
+                                <p>
+                                    Rua Araguaia, 144 - Núcleo urbano de Carajás - Parauapebas - PA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="rodape">
+            <footer>
+                <div class="container container-flex">
+                    <p>
+                        2024 &copy; S3 Sistemas - Todos os direitos reservados.
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/messages_pt_BR.min.js"></script>
+        <script src="main.js"></script>
         </div>
     </main>
 </body>
 
 <script src="./lib/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
 </html>
