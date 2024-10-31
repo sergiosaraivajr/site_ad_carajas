@@ -93,7 +93,8 @@ h1 {
 }
 
 #sobreMain {
-    background-color: #3d10167b;
+    background-color: #c1c1c1;
+    border-radius: 8px
 }
 
 .card,
